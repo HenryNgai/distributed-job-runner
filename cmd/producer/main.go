@@ -26,6 +26,11 @@ func createDummyJobs() []Job {
 	return jobs
 }
 
+func pushToQueue(job Job) {
+	// Placeholder for pushing job to a message queue
+	log.Printf("Pushing job to queue: %+v\n", job)
+}
+
 func main() {
 	log.Println("Producer started")
 	firstJob := Job{ID: 1, Data: "Sample Data"}
